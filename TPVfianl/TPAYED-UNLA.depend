@@ -1,0 +1,113 @@
+# depslib dependency file v1.0
+1601246694 source:c:\users\nehuen\documents\ayed-tp\ayed-tp\tpayed-unla\tpayed-unla\entidades\provincia.cpp
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<string>
+	"Provincia.h"
+	"../Listas/Lista.h"
+	<stdlib.h>
+
+1601246722 c:\users\nehuen\documents\ayed-tp\ayed-tp\tpayed-unla\tpayed-unla\entidades\provincia.h
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	"../Listas/Lista.h"
+
+1601246775 c:\users\nehuen\documents\ayed-tp\ayed-tp\tpayed-unla\tpayed-unla\listas\lista.h
+
+1601246706 source:c:\users\nehuen\documents\ayed-tp\ayed-tp\tpayed-unla\tpayed-unla\entidades\sucursal.cpp
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<string>
+	"Sucursal.h"
+	"../Listas/Lista.h"
+	<stdlib.h>
+
+1601246732 c:\users\nehuen\documents\ayed-tp\ayed-tp\tpayed-unla\tpayed-unla\entidades\sucursal.h
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	"../Listas/Lista.h"
+
+1601246748 source:c:\users\nehuen\documents\ayed-tp\ayed-tp\tpayed-unla\tpayed-unla\listas\listas.cpp
+	"Lista.h"
+	<iostream>
+	<iomanip>
+	"../Entidades/Sucursal.h"
+	"../entidades/Provincia.h"
+
+1601246792 source:c:\users\nehuen\documents\ayed-tp\ayed-tp\tpayed-unla\tpayed-unla\main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"entidades/Sucursal.h"
+	"entidades/Provincia.h"
+	"Listas/Lista.h"
+
+1601246917 source:c:\users\mariano\desktop\tpvfianl\entidades\provincia.cpp
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<string>
+	"Provincia.h"
+	"../Listas/Lista.h"
+	<stdlib.h>
+
+1601246917 c:\users\mariano\desktop\tpvfianl\entidades\provincia.h
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	"../Listas/Lista.h"
+
+1601246917 c:\users\mariano\desktop\tpvfianl\listas\lista.h
+
+1601246917 source:c:\users\mariano\desktop\tpvfianl\entidades\sucursal.cpp
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<string>
+	"Sucursal.h"
+	"../Listas/Lista.h"
+	<stdlib.h>
+
+1601246917 c:\users\mariano\desktop\tpvfianl\entidades\sucursal.h
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	"../Listas/Lista.h"
+
+1601246917 source:c:\users\mariano\desktop\tpvfianl\listas\listas.cpp
+	"Lista.h"
+	<iostream>
+	<iomanip>
+	"../Entidades/Sucursal.h"
+	"../entidades/Provincia.h"
+
+1601419213 source:c:\users\mariano\desktop\tpvfianl\main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"entidades/Sucursal.h"
+	"entidades/Provincia.h"
+	"Listas/Lista.h"
+	"entidades/Interfaz.h"
+
+1601419905 source:c:\users\mariano\desktop\tpvfianl\interfaz.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"entidades/Sucursal.h"
+	"entidades/Provincia.h"
+	"Listas/Lista.h"
+	"Nucleo.cpp"
+	"entidades/Interfaz.h"
+
+1601418869 c:\users\mariano\desktop\tpvfianl\nucleo.cpp
+	"entidades/Sucursal.h"
+	"entidades/Provincia.h"
+	"Listas/Lista.h"
+
+1601419795 c:\users\mariano\desktop\tpvfianl\entidades\interfaz.h
+
