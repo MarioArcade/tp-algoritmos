@@ -7,7 +7,7 @@
 #include "Nucleo.cpp"
 #include "entidades/Interfaz.h"
 using namespace std;
-int opc, mod(), con(), menu(),consub1(),consub2(), ren();
+int opc, modificacion(), consulta(), menu(),facturacion(),ventas(), rendimiento(), volver();
 int menu(){
 system("cls");
     cout <<"###############################################"<< endl;
@@ -18,13 +18,13 @@ system("cls");
     cout << "\n3. Salir" << endl;
     cout << "\n\nIngrese la opcion deseada: "; cin>>opc;
     switch(opc){
-    case 1: mod(); break;
-    case 2: con(); break;
+    case 1: modificacion(); break;
+    case 2: consulta(); break;
     case 3: break;
     default : menu();
     }
 }
-int mod(){
+int modificacion(){
     system("cls");
 cout <<"###############################################"<< endl;
     cout << "#\tSistema de control se sucursal.       #" << endl;
@@ -35,14 +35,14 @@ cout <<"###############################################"<< endl;
     cout << "\n4. Volver" << endl;
     cout << "\n\nIngrese la opcion deseada: "; cin>>opc;
     switch(opc){
-    case 1: mod(); break;
-    case 2: con(); break;
-    case 3: mod(); break;
+    case 1: modificacion(); break;
+    case 2: modificacion(); break;
+    case 3: modificacion(); break;
     case 4: menu(); break;
-    default : mod();
+    default : modificacion();
     }
 }
-int con(){
+int consulta(){
 system("cls");
 cout <<"###############################################"<< endl;
     cout << "#\tSistema de control se sucursal.       #" << endl;
@@ -54,18 +54,16 @@ cout <<"###############################################"<< endl;
     cout << "\n\nIngrese la opcion deseada: "; cin>>opc;
     system("cls");
     switch(opc){
-    case 1: consub1(); break;
-    case 2: consub2(); break;
-    case 3: ren(); break;
+    case 1: facturacion(); break;
+    case 2: ventas(); break;
+    case 3: rendimiento(); volver(); break;
     case 4: menu(); break;
-    default : con();
+    default : consulta();
     }
     }
-int consub1(){
+int facturacion(){
 system("cls");
- Lista listaSuc;
-    crearLista(listaSuc,compararMonto);
-    cargarSucursal( listaSuc);
+
     cout <<"###############################################"<< endl;
     cout << "#\tSistema de control se sucursal.       #" << endl;
     cout <<"###############################################"<< endl;
@@ -76,24 +74,15 @@ system("cls");
     cout << "\n\nIngrese la opcion deseada: "; cin>>opc;
     system("cls");
     switch(opc){
-    case 1: reordenar(listaSuc); ImprimirLista(listaSuc); break;
-    case 2: setCompare(listaSuc,compararMontoProv); reordenar(listaSuc); ImprimirLista(listaSuc); break;
-    case 3: eliminarListaSucursal(listaSuc); con(); break;
-    default : consub1();
-    }
-     eliminarListaSucursal(listaSuc);
-    cout << "\n Ingrese 0 para volver o cualquier numero para salir: "; cin>>opc;
-    system("cls");
-    switch(opc){
-    case 0: consub2(); break;
-    default : break;
+    case 1: lstNacional(); volver(); break;
+    case 2: lstProvincial(); volver(); break;
+    case 3: consulta(); break;
+    default : facturacion();
     }
 }
-int consub2(){
+int ventas(){
 system("cls");
- Lista listaSuc;
-    crearLista(listaSuc,compararMonto);
-    cargarSucursal( listaSuc);
+
     cout <<"###############################################"<< endl;
     cout << "#\tSistema de control se sucursal.       #" << endl;
     cout <<"###############################################"<< endl;
@@ -104,33 +93,22 @@ system("cls");
     cout << "\n\nIngrese la opcion deseada: "; cin>>opc;
     system("cls");
     switch(opc){
-    case 1: setCompare(listaSuc,compararArticulo); reordenar(listaSuc); ImprimirLista(listaSuc);; break;
-    case 2: setCompare(listaSuc,compararArticuloProv); reordenar(listaSuc); ImprimirLista(listaSuc); break;
-    case 3: con(); eliminarListaSucursal(listaSuc); break;
-    default : consub2();
+    case 1: lstNacional(); volver(); break;
+    case 2: lstProvincial(); volver(); break;
+    case 3: consulta(); break;
+    default : ventas();
     }
-    eliminarListaSucursal(listaSuc);
-    cout << "\n Ingrese 0 para volver o cualquier numero para salir: "; cin>>opc;
-    system("cls");
-    switch(opc){
-    case 0: consub2(); break;
-    default : break;
-    }
-}
-int ren(){
-system("cls");
-Lista listaSuc;
-    crearLista(listaSuc,compararMonto);
-    cargarSucursal( listaSuc);
-    setCompare(listaSuc,compararMt2Fact);
-    reordenar(listaSuc);
-    ImprimirLista(listaSuc);
-     eliminarListaSucursal(listaSuc);
-    cout << "\n Ingrese 0 para volver o cualquier numero para salir: "; cin>>opc;
-    system("cls");
-    switch(opc){
-    case 0: con(); break;
-    default : break;
 
+    }
+int rendimiento(){
+system("cls");
+lstRendimiento();
 }
+int volver(){
+cout << "\n Ingrese 0 para volver o cualquier numero para salir: "; cin>>opc;
+    system("cls");
+    switch(opc){
+    case 0: consulta(); break;
+    default : break;
+    }
 }

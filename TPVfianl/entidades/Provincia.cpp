@@ -6,33 +6,26 @@
 #include "../Listas/Lista.h"
 #include <stdlib.h>
 using namespace std;
-void crearSProvincia(SProvincia &sprovincia, int id, std::string provArch)
-{
+void crearSProvincia(SProvincia &sprovincia, int id, std::string provArch){
     sprovincia.id = id;
     sprovincia.provArch = provArch;
 }
-void borrarSProvincia(SProvincia *sprovincia)
-{
+void borrarSProvincia(SProvincia *sprovincia){
     delete sprovincia;
 }
-int getId(SProvincia &sprovincia)
-{
+int getId(SProvincia &sprovincia){
     return sprovincia.id;
 }
-void setId(SProvincia &sprovincia, int id)
-{
+void setId(SProvincia &sprovincia, int id){
     sprovincia.id=id;
 }
-string getProvArch(SProvincia &sprovincia)
-{
+string getProvArch(SProvincia &sprovincia){
     return sprovincia.provArch;
 }
-void setProvArch(SProvincia &sprovincia, string provArch)
-{
+void setProvArch(SProvincia &sprovincia, string provArch){
     sprovincia.provArch=provArch;
 }
-void cargarProvincias(Lista &lista)
-{
+void cargarProvincias(Lista &lista){
     FILE* fProvincias;
     string lectura="";
     //fSucursal = fopen("C:\\Users\\Equipo\\Documents\\AYED-TP\\archivo.txt","r");
@@ -50,8 +43,7 @@ void cargarProvincias(Lista &lista)
     }
     fclose(fProvincias);
 }
-void leerLineaProvincia(string *destino, FILE* fProvincias)
-{
+void leerLineaProvincia(string *destino, FILE* fProvincias){
     char buffer=0;
     int i;
     i=0;
@@ -66,7 +58,7 @@ void leerLineaProvincia(string *destino, FILE* fProvincias)
         i++;
     }
 }
-string toStringProvincia(SProvincia &sprovincia) {
+string toStringProvincia(SProvincia &sprovincia){
     string dato="NULL\n";
        dato = "Id: "+  std::to_string(getId(sprovincia)) +
                " - Provincia: " + getProvArch(sprovincia);

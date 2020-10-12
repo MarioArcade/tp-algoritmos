@@ -60,8 +60,7 @@ ResultadoComparacion compararMt2Fact(PtrDato ptrDato1, PtrDato ptrDato2) {
     else
         return IGUAL;
 }
-void listasProvincias(Lista &listaSuc, Lista &listaProv, Lista listaOrdenProvinciasMonto)
-{
+void listasProvincias(Lista &listaSuc, Lista &listaProv, Lista listaOrdenProvinciasMonto){
     PtrNodoLista ptrCursorP = primero(listaProv);
     PtrNodoLista ptrCursorS = primero(listaSuc);
     while ( ptrCursorP != fin() ) {
@@ -73,4 +72,31 @@ void listasProvincias(Lista &listaSuc, Lista &listaProv, Lista listaOrdenProvinc
             ptrCursorS=ptrCursorS->sgte;
         }
     }
+}
+void lstNacional(){
+Lista listaSuc;
+crearLista(listaSuc,compararMonto);
+cargarSucursal( listaSuc);
+setCompare(listaSuc,compararArticulo);
+reordenar(listaSuc);
+ImprimirLista(listaSuc);
+eliminarListaSucursal(listaSuc);
+}
+void lstProvincial(){
+Lista listaSuc;
+crearLista(listaSuc,compararMonto);
+cargarSucursal( listaSuc);
+setCompare(listaSuc,compararMontoProv);
+reordenar(listaSuc);
+ImprimirLista(listaSuc);
+eliminarListaSucursal(listaSuc);
+}
+void lstRendimiento(){
+Lista listaSuc;
+    crearLista(listaSuc,compararMonto);
+    cargarSucursal( listaSuc);
+    setCompare(listaSuc,compararMt2Fact);
+    reordenar(listaSuc);
+    ImprimirLista(listaSuc);
+    eliminarListaSucursal(listaSuc);
 }

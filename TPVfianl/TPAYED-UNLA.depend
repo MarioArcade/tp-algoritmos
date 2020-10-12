@@ -111,3 +111,68 @@
 
 1601419795 c:\users\mariano\desktop\tpvfianl\entidades\interfaz.h
 
+1601246917 source:c:\users\mariano\desktop\facu\algoritmos\tpvfianl\listas\listas.cpp
+	"Lista.h"
+	<iostream>
+	<iomanip>
+	"../Entidades/Sucursal.h"
+	"../entidades/Provincia.h"
+
+1601433267 c:\users\mariano\desktop\facu\algoritmos\tpvfianl\listas\lista.h
+
+1601433202 c:\users\mariano\desktop\facu\algoritmos\tpvfianl\entidades\sucursal.h
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	"../Listas/Lista.h"
+
+1601433188 c:\users\mariano\desktop\facu\algoritmos\tpvfianl\entidades\provincia.h
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	"../Listas/Lista.h"
+
+1602465384 source:c:\users\mariano\desktop\facu\algoritmos\tpvfianl\entidades\provincia.cpp
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<string>
+	"Provincia.h"
+	"../Listas/Lista.h"
+	<stdlib.h>
+
+1601941852 source:c:\users\mariano\desktop\facu\algoritmos\tpvfianl\entidades\sucursal.cpp
+	<iostream>
+	<sstream>
+	<stdio.h>
+	<string>
+	"Sucursal.h"
+	"../Listas/Lista.h"
+	<stdlib.h>
+
+1602465304 source:c:\users\mariano\desktop\facu\algoritmos\tpvfianl\interfaz.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"entidades/Sucursal.h"
+	"entidades/Provincia.h"
+	"Listas/Lista.h"
+	"Nucleo.cpp"
+	"entidades/Interfaz.h"
+
+1602465315 c:\users\mariano\desktop\facu\algoritmos\tpvfianl\nucleo.cpp
+	"entidades/Sucursal.h"
+	"entidades/Provincia.h"
+	"Listas/Lista.h"
+
+1602464837 c:\users\mariano\desktop\facu\algoritmos\tpvfianl\entidades\interfaz.h
+
+1601433135 source:c:\users\mariano\desktop\facu\algoritmos\tpvfianl\main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"entidades/Sucursal.h"
+	"entidades/Provincia.h"
+	"Listas/Lista.h"
+	"entidades/Interfaz.h"
+

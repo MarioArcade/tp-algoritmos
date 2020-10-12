@@ -6,8 +6,7 @@
 #include "Listas/Lista.h"
 #include "entidades/Interfaz.h"
 using namespace std;
-int main()
-{
+int main(){
     system("color 1F");
     menu();
     return 0;

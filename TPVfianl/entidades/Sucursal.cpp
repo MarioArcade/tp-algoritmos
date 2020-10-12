@@ -14,8 +14,7 @@ void crearSucursal(Sucursal &sucursal ,int codSucursal,string provincia, int can
     sucursal.cm2 = cm2;
     sucursal.casaMatriz = casaMatriz;
 }
-void borrarSucursal(Sucursal *sucursal)
-{
+void borrarSucursal(Sucursal *sucursal){
     delete sucursal;
 }
 int getCodSucursal(Sucursal &sucursal){
@@ -24,49 +23,37 @@ int getCodSucursal(Sucursal &sucursal){
 void setCodSucursal(Sucursal &sucursal, int codSucursal){
     sucursal.codSucursal = codSucursal;
 }
-//char
-string getProvincia(Sucursal &sucursal)
-{
+string getProvincia(Sucursal &sucursal){
     return sucursal.provincia;
 }
-void setProvincia(Sucursal &sucursal, string provincia)
-{
+void setProvincia(Sucursal &sucursal, string provincia){
    sucursal.provincia = provincia;
 }
-int getCantArticulo(Sucursal &sucursal)
-{
+int getCantArticulo(Sucursal &sucursal){
     return sucursal.cantArticulo;
 }
-void setCantArtciulo(Sucursal &sucursal, int cantArticulo)
-{
+void setCantArtciulo(Sucursal &sucursal, int cantArticulo){
     sucursal.cantArticulo = cantArticulo;
 }
-float getMonto(Sucursal &sucursal)
-{
+float getMonto(Sucursal &sucursal){
     return sucursal.monto;
 }
-void setMonto(Sucursal &sucursal, float monto)
-{
+void setMonto(Sucursal &sucursal, float monto){
     sucursal.monto = monto;
 }
-float getCm2(Sucursal &sucursal)
-{
+float getCm2(Sucursal &sucursal){
     return sucursal.cm2;
 }
-void setCm2(Sucursal &sucursal, float cm2)
-{
+void setCm2(Sucursal &sucursal, float cm2){
     sucursal.cm2 = cm2;
 }
-int getCasaMatriz(Sucursal &sucursal)
-{
+int getCasaMatriz(Sucursal &sucursal){
     return sucursal.casaMatriz;
 }
-void setCasaMatriz(Sucursal &sucursal, int casaMatriz)
-{
+void setCasaMatriz(Sucursal &sucursal, int casaMatriz){
     sucursal.casaMatriz = casaMatriz;
 }
-void cargarSucursal(Lista &lista)
-{
+void cargarSucursal(Lista &lista){
     FILE* fSucursal;
     string lectura="";
     int pos=0;
@@ -125,8 +112,7 @@ void cargarSucursal(Lista &lista)
     }
     fclose(fSucursal);
 }
-void leerLineaSucursal(string *destino, FILE* fSucursal)
-{
+void leerLineaSucursal(string *destino, FILE* fSucursal){
     char buffer=0;
     int i;
     i=0;
@@ -142,13 +128,13 @@ void leerLineaSucursal(string *destino, FILE* fSucursal)
     }
 
 }
-string toString(Sucursal &sucursal) {
+string toString(Sucursal &sucursal){
     string dato="NULL\n";
-       dato = "IdSuc: "+  std::to_string(getCodSucursal(sucursal)) +
-               " - Provincia: " + getProvincia(sucursal)+
-               " - CantArticulo: "+ std::to_string(getCantArticulo(sucursal))+
-               " - Monto: "+ std::to_string(getMonto(sucursal))+
-               " - Cm2: "+ std::to_string(getCm2(sucursal))+
-                " - CasaMatriz: " + std::to_string(getCasaMatriz(sucursal));
+       dato = "\n\nIdSuc: "+  std::to_string(getCodSucursal(sucursal)) +
+               " \n\nProvincia: " + getProvincia(sucursal)+
+               " \n\nCantArticulo: "+ std::to_string(getCantArticulo(sucursal))+
+               " \n\nMonto: "+ std::to_string(getMonto(sucursal))+
+               " \n\nCm2: "+ std::to_string(getCm2(sucursal))+
+                " \n\nCasaMatriz: " + std::to_string(getCasaMatriz(sucursal));
     return dato;
 }
